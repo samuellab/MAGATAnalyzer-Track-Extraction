@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.cnd.makeproject</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/make-project/1">
+            <name>Command Line Extractor</name>
+            <make-project-type>0</make-project-type>
+            <c-extensions/>
+            <cpp-extensions>cpp</cpp-extensions>
+            <header-extensions/>
+            <sourceEncoding>UTF-8</sourceEncoding>
+            <make-dep-projects>
+                <make-dep-project>../../Track Extractor Netbeans Project</make-dep-project>
+                <make-dep-project>../../Image-Stack-Compressor</make-dep-project>
+            </make-dep-projects>
+            <sourceRootList>
+                <sourceRootElem>../../Track Extractor Netbeans Project</sourceRootElem>
+            </sourceRootList>
+            <confList>
+                <confElem>Debug</confElem>
+                <confElem>Release</confElem>
+            </confList>
+        </data>
+    </configuration>
+</project>

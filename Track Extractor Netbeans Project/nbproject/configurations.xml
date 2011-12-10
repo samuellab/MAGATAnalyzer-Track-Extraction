@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="69">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <logicalFolder name="source code" displayName="source code" projectFiles="true">
+      </logicalFolder>
+      <itemPath>../source code/AutoThresholder.h</itemPath>
+      <itemPath>../source code/ContourPoint.h</itemPath>
+      <itemPath>../source code/CvUtilsPlusPlus.h</itemPath>
+      <itemPath>../source code/FrameLoader.h</itemPath>
+      <itemPath>../source code/ImLoader.h</itemPath>
+      <itemPath>../source code/ImTrackPoint.h</itemPath>
+      <itemPath>../source code/MaggotTrackBuilder.h</itemPath>
+      <itemPath>../source code/MaggotTrackExtractor.h</itemPath>
+      <itemPath>../source code/MaggotTrackPoint.h</itemPath>
+      <itemPath>../source code/MidlineMaggotTrackPoint.h</itemPath>
+      <itemPath>../source code/PointExtractor.h</itemPath>
+      <itemPath>../Image-Stack-Compressor/tictoc/Timer.h</itemPath>
+      <itemPath>../source code/TrackExtractor.h</itemPath>
+      <itemPath>../source code/WormPointExtractor.h</itemPath>
+      <itemPath>../source code/communicator.h</itemPath>
+      <itemPath>../source code/newDLLWrapper.h</itemPath>
+      <itemPath>../Image-Stack-Compressor/tictoc/tictoc.h</itemPath>
+      <itemPath>../source code/track.h</itemPath>
+      <itemPath>../source code/trackbuilder.h</itemPath>
+      <itemPath>../source code/trackmatch.h</itemPath>
+      <itemPath>../source code/trackpoint.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>../source code/AutoThresholder.cpp</itemPath>
+      <itemPath>../source code/ContourPoint.cpp</itemPath>
+      <itemPath>../source code/CvUtilsPlusPlus.cpp</itemPath>
+      <itemPath>../source code/FrameLoader.cpp</itemPath>
+      <itemPath>../source code/ImLoader.cpp</itemPath>
+      <itemPath>../source code/ImTrackPoint.cpp</itemPath>
+      <itemPath>../source code/MaggotTrackBuilder.cpp</itemPath>
+      <itemPath>../source code/MaggotTrackExtractor.cpp</itemPath>
+      <itemPath>../source code/MaggotTrackPoint.cpp</itemPath>
+      <itemPath>../source code/MidlineMaggotTrackPoint.cpp</itemPath>
+      <itemPath>../source code/PointExtractor.cpp</itemPath>
+      <itemPath>../Image-Stack-Compressor/tictoc/Timer.cpp</itemPath>
+      <itemPath>../source code/TrackExtractor.cpp</itemPath>
+      <itemPath>../source code/WormPointExtractor.cpp</itemPath>
+      <itemPath>../source code/communicator.cpp</itemPath>
+      <itemPath>../source code/newDLLWrapper.cpp</itemPath>
+      <itemPath>../source code/newmain.cpp</itemPath>
+      <itemPath>../Image-Stack-Compressor/tictoc/tictoc.cpp</itemPath>
+      <itemPath>../source code/track.cpp</itemPath>
+      <itemPath>../source code/trackbuilder.cpp</itemPath>
+      <itemPath>../source code/trackmatch.cpp</itemPath>
+      <itemPath>../source code/trackpoint.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+    <itemPath>../source code/BatchExtractor.cpp</itemPath>
+    <itemPath>../source code/BatchExtractor.h</itemPath>
+    <itemPath>../source code/MaggotReprocessor.cpp</itemPath>
+    <itemPath>../source code/MaggotReprocessor.h</itemPath>
+    <itemPath>../source code/StackLoader.cpp</itemPath>
+    <itemPath>../source code/StackLoader.h</itemPath>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>../source code</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="2">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <compilerSet>MinGW|MinGW</compilerSet>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <incDir>
+            <pElem>C:/Program Files/OpenCV/cv/include</pElem>
+            <pElem>C:/Program Files/OpenCV/cxcore/include</pElem>
+          </incDir>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>../source code</pElem>
+            <pElem>../Necessary Libraries and Includes/CV/headers</pElem>
+            <pElem>../Image-Stack-Compressor</pElem>
+            <pElem>../yaml-cpp/include</pElem>
+            <pElem>../yaml-cpp/include/yaml-cpp</pElem>
+            <pElem>../Image-Stack-Compressor/tictoc</pElem>
+          </incDir>
+          <commandLine>-DBUILD_DLL -static-libgcc -static-libstdc++</commandLine>
+        </ccTool>
+        <linkerTool>
+          <output>../libRevisedTrackExtractor.dll</output>
+          <linkerAddLib>
+            <pElem>../Necessary Libraries and Includes/CV/lib</pElem>
+            <pElem>../yaml-cpp</pElem>
+          </linkerAddLib>
+          <linkerLibItems>
+            <linkerLibProjectItem>
+              <makeArtifact PL="../Image-Stack-Compressor"
+                            CT="3"
+                            CN="Debug"
+                            AC="true"
+                            BL="false"
+                            WD="../Image-Stack-Compressor"
+                            BC="${MAKE}  -f Makefile CONF=Debug"
+                            CC="${MAKE}  -f Makefile CONF=Debug clean"
+                            OP="image_stack_compressor.lib">
+              </makeArtifact>
+            </linkerLibProjectItem>
+            <linkerLibLibItem>cv</linkerLibLibItem>
+            <linkerLibLibItem>cxcore</linkerLibLibItem>
+            <linkerLibLibItem>highgui</linkerLibLibItem>
+            <linkerLibFileItem>../yaml-cpp/libyaml-cpp.lib</linkerLibFileItem>
+          </linkerLibItems>
+        </linkerTool>
+        <requiredProjects>
+          <makeArtifact PL="C:/tictoc/tictoc"
+                        CT="1"
+                        CN="Debug"
+                        AC="true"
+                        BL="false"
+                        WD="C:/tictoc/tictoc"
+                        BC="${MAKE}  -f Makefile CONF=Debug"
+                        CC="${MAKE}  -f Makefile CONF=Debug clean"
+                        OP="dist/Debug/MinGW-Windows/tictoc">
+          </makeArtifact>
+        </requiredProjects>
+      </compileType>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <compilerSet>MinGW|MinGW</compilerSet>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+      </compileType>
+    </conf>
+    <conf name="library" type="3">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <compilerSet>MinGW|MinGW</compilerSet>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+            <pElem>../source code</pElem>
+            <pElem>../Necessary Libraries and Includes/CV/headers</pElem>
+            <pElem>../Marc-TicToc</pElem>
+            <pElem>../Image-Stack-Compressor</pElem>
+            <pElem>../yaml-cpp/include</pElem>
+            <pElem>../yaml-cpp/include/yaml-cpp</pElem>
+          </incDir>
+          <commandLine>-static-libgcc -static-libstdc++</commandLine>
+        </ccTool>
+        <archiverTool>
+          <output>trackExtractor.lib</output>
+        </archiverTool>
+      </compileType>
+    </conf>
+  </confs>
+</configurationDescriptor>

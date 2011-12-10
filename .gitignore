@@ -1,0 +1,8 @@
+*.o
+*.o.d
+*.asv
+*.dll
+*.exe
+*.lnk
+*.bmp
+*.jpg

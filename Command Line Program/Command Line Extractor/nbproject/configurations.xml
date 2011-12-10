@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="69">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true"
+                   kind="SOURCE_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true"
+                   kind="SOURCE_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true"
+                   kind="SOURCE_LOGICAL_FOLDER">
+      <itemPath>main.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>../../Track Extractor Netbeans Project</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <compilerSet>MinGW|MinGW</compilerSet>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <incDir>
+            <pElem>../../Necessary Libraries and Includes/CV/headers</pElem>
+            <pElem>../../source code</pElem>
+            <pElem>../../yaml-cpp</pElem>
+            <pElem>../../yaml-cpp/include</pElem>
+            <pElem>../../yaml-cpp/include/yaml-cpp</pElem>
+            <pElem>../../yaml-cpp/src</pElem>
+            <pElem>../../Track Extractor Netbeans Project</pElem>
+          </incDir>
+          <commandLine>-static-libgcc -static-libstdc++</commandLine>
+        </ccTool>
+        <linkerTool>
+          <output>extract-stack.exe</output>
+          <linkerAddLib>
+            <pElem>../../Necessary Libraries and Includes/CV/lib</pElem>
+            <pElem>../../yaml-cpp</pElem>
+          </linkerAddLib>
+          <linkerLibItems>
+            <linkerLibProjectItem>
+              <makeArtifact PL="../../Track Extractor Netbeans Project"
+                            CT="3"
+                            CN="library"
+                            AC="true"
+                            BL="false"
+                            WD="../../Track Extractor Netbeans Project"
+                            BC="${MAKE}  -f Makefile CONF=library"
+                            CC="${MAKE}  -f Makefile CONF=library clean"
+                            OP="trackExtractor.lib">
+              </makeArtifact>
+            </linkerLibProjectItem>
+            <linkerLibProjectItem>
+              <makeArtifact PL="../../Image-Stack-Compressor"
+                            CT="3"
+                            CN="Debug"
+                            AC="true"
+                            BL="false"
+                            WD="../../Image-Stack-Compressor"
+                            BC="${MAKE}  -f Makefile CONF=Debug"
+                            CC="${MAKE}  -f Makefile CONF=Debug clean"
+                            OP="image_stack_compressor.lib">
+              </makeArtifact>
+            </linkerLibProjectItem>
+            <linkerLibLibItem>cv</linkerLibLibItem>
+            <linkerLibLibItem>cxcore</linkerLibLibItem>
+            <linkerLibLibItem>highgui</linkerLibLibItem>
+            <linkerLibFileItem>../../yaml-cpp/libyaml-cpp.lib</linkerLibFileItem>
+          </linkerLibItems>
+        </linkerTool>
+        <requiredProjects>
+          <makeArtifact PL="../../Track Extractor Netbeans Project"
+                        CT="3"
+                        CN="library"
+                        AC="true"
+                        BL="false"
+                        WD="../../Track Extractor Netbeans Project"
+                        BC="${MAKE}  -f Makefile CONF=library"
+                        CC="${MAKE}  -f Makefile CONF=library clean"
+                        OP="trackExtractor.lib">
+          </makeArtifact>
+        </requiredProjects>
+      </compileType>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <compilerSet>MinGW|MinGW</compilerSet>
+        <platform>3</platform>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+    </conf>
+  </confs>
+</configurationDescriptor>
