@@ -6,3 +6,4 @@
 *.lnk
 *.bmp
 *.jpg
+!libRevisedTrackExtractor.dll
