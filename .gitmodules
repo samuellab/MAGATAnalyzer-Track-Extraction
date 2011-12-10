@@ -1,0 +1,3 @@
+[submodule "Image-Stack-Compressor"]
+	path = Image-Stack-Compressor
+	url = git@github.com:samuellab/MMF-StaticBackgroundCompressor.git
